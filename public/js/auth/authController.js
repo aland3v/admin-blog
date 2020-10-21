@@ -1,12 +1,10 @@
 $(() => {
   const auth = new Autenticacion()
 
-  $('#btnInicioSesion').on("click",() => {
+  $('#btnInicioSesion').on("click",(event) => {
+    event.preventDefault()
     const email = $('#login-email').val()
-    const password = $('#login-pass').val()
-    console.log(email)
-    console.log(password)
+    const password = $('#login-pass').val()    
     auth.autEmailPass(email, password)
   })
-
 })

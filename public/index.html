@@ -30,31 +30,32 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-85 p-b-20">
-				<form class="login100-form validate-form">
+				<form method="POST" class="login100-form validate-form">
 					<span class="login100-form-title p-b-70">
-						Welcome
+						Bienvenido
 					</span>
 					<span class="login100-form-avatar">
 						<img src="assets/img/avatar-01.jpg" alt="AVATAR">
 					</span>
 
-					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
-						<input class="input100" type="text" name="username">
-						<span class="focus-input100" data-placeholder="Username"></span>
+					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter email">
+						<input class="input100" type="text" id="login-email" name="email" >
+						<span class="focus-input100" data-placeholder="Correo"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">
-						<input class="input100" type="password" name="pass">
-						<span class="focus-input100" data-placeholder="Password"></span>
+						<input class="input100" type="password" name="pass" id="login-pass">
+						<span class="focus-input100" data-placeholder="Contraseña"></span>
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
+						<button class="login100-form-btn" id="btnInicioSesion">
+							Iniciar Sesión
 						</button>
 					</div>
 
-					<ul class="login-more p-t-190">
+          <!-- TODO Implementar estas funcionalidades -->
+					<!-- <ul class="login-more p-t-190">
 						<li class="m-b-8">
 							<span class="txt1">
 								Forgot
@@ -74,7 +75,7 @@
 								Sign up
 							</a>
 						</li>
-					</ul>
+					</ul> -->
 				</form>
 			</div>
 		</div>
@@ -83,9 +84,10 @@
 
 	<div id="dropDownSelect1"></div>
 	</body>
+<!--===============================================================================================-->
 <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
 https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -103,8 +105,7 @@ https://firebase.google.com/docs/web/setup#available-libraries -->
 <!-- endbuild -->
 
 
-<!--===============================================================================================-->
-<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
 <!--===============================================================================================-->
 	<script src="vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
