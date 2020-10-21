@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Dev</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="assets/icons/social/flaticon.css">
+  <link rel="stylesheet" href="css/media_queries.css">
+</head>
+<body>
+  <header>
+    <section class="header-icons-container">
+      <div class="icons">
+        <a href="https://github.com/aland3v" target="_blank"><span class="flaticon-github-logo"></span></a>
+        <a href="https://www.linkedin.com/in/aland3v/" target="_blank"><span class="flaticon-linkedin"></span></a>        
+        <a href="https://twitter.com/aland3v" target="_blank"><span class="flaticon-twitter"></span></a>
+      </div>
+    </section>
+    <nav>
+      <section class="nav-logo-container">
+        <a href="/"><img src="assets/img/logo-negro.jpg" alt="Logo de mi blog"></a>
+      </section>
+      <section class="profile-link">
+        <a href="perfil.html">Sobre mí</a>
+      </section>
+    </nav>
+  </header>
+  
+  <main class="blogs-main">
+    <section class="blogs-news-container">
+      <div class="grid-container blogs-main-new" id="postmain">        
+      </div>      
+    </section>
+
+    <section class="blogs-posts-container">
+      <h3></h3>
+      <!-- Aquí van los listados de los blogs -->
+      <div class="grid-container" id="postsblog">
+        
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- Al footer no es necesario ponerle clases
+  por que se va a repetir en todas las paginas
+  y lo podemos llamar directamente por su nombre
+  de clase -->
+  <footer>
+    <p><small>Mi Blog Personal - &copy; Alan Quispe 2020</small></p>
+  </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+
+<!--build:js js/main.min.js -->
+<script type="text/javascript" src="js/config/ConfigFirebase.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript" src="js/util/util.js"></script>
+<script type="text/javascript" src="js/post/posts.js"></script>
+<script type="text/javascript" src="js/post/postsController.js"></script>
+<!-- endbuild -->
+
+</html>

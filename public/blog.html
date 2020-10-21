@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Dev</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="assets/icons/social/flaticon.css">
+  <link rel="stylesheet" href="css/media_queries.css">
+</head>
+<body>
+  <header>
+    <section class="header-icons-container">
+      <div class="icons">
+        <a href="https://github.com/aland3v" target="_blank"><span class="flaticon-github-logo"></span></a>
+        <a href="https://www.linkedin.com/in/aland3v/" target="_blank"><span class="flaticon-linkedin"></span></a>        
+        <a href="https://twitter.com/aland3v" target="_blank"><span class="flaticon-twitter"></span></a>
+      </div>
+    </section>
+    <nav>
+      <section class="nav-logo-container">
+        <a href="/"><img src="assets/img/logo-negro.jpg" alt="Logo de mi blog"></a>
+      </section>
+      <section class="profile-link">
+        <a href="perfil.html">Sobre mí</a>
+      </section>
+    </nav>
+  </header>
+
+  <main id="singlepost">
+    <!-- <section class="grid-container blogpost-img-container">
+      <img src="assets/img/img_posts/OpenGL-in-Android.jpg" alt="">
+    </section>
+    <section class="blogpost-main-container">
+      <div class="grid-container">
+        <h3>Noticias</h3>
+        <article>
+          <h1>Bonito diseño</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab natus, deserunt laborum voluptatem eius earum facilis explicabo possimus iusto. Quaerat amet animi sit saepe at quidem omnis natus totam velit?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, aliquid et? Nostrum aspernatur consequatur laudantium nihil molestiae consectetur, placeat numquam architecto doloremque debitis qui quibusdam! Rerum illo reiciendis error corrupti.
+          </p>
+          <div class="img-post"><img src="assets/img/img_posts/BSpline.gif" alt=""></div>
+          <p>10/45/45</p>
+        </article>
+      </div>
+    </section>
+    <section class="contact-main-container">
+        <div>
+          <img src="assets/img/newsletter.png" alt="">
+          <div class="contact-left">
+            <strong>Contactame</strong>
+            <p>Para cualquier consulta o comentario, puedes escribirme a mi correo electronico <strong>aland3v@gmail.com</strong></p>
+          </div>
+        </div>
+        <div>
+          <img src="assets/img/github.png" alt="">
+          <div class="contact-right">
+            <a href="https://github.com/aland3v"><strong>Proyectos</strong></a>
+            <p>Aquí puedes encontrar algunos de los proyectos que desarrollé y colaboré.</p>
+          </div>
+        </div>
+      </section> -->
+  </main>
+
+  <!-- Al footer no es necesario ponerle clases
+  por que se va a repetir en todas las paginas
+  y lo podemos llamar directamente por su nombre
+  de clase -->
+  <footer>
+    <p><small>Mi Blog Personal - &copy; Alan Quispe 2020</small></p>
+  </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+
+<!--build:js js/main.min.js -->
+<script type="text/javascript" src="js/config/ConfigFirebase.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript" src="js/util/util.js"></script>
+<script type="text/javascript" src="js/post/post.js"></script>
+<script type="text/javascript" src="js/post/postController.js"></script>
+<!-- endbuild -->
+</html>

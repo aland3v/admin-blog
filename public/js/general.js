@@ -1,12 +1,9 @@
 $(() => {
-  $('.tooltipped').tooltip({ delay: 50 })
-  $('.modal').modal()
-
   firebase.initializeApp(firebaseConfig)
 
-  const post = new Post()
+  /* const post = new Post()
   post.consultarTodosPost()
-
+ */
   // Firebase observador del cambio de estado de auth
   firebase.auth().onAuthStateChanged(user => {
     if (user) {
@@ -23,7 +20,7 @@ $(() => {
   })
 
   // Evento boton inicio sesion
-  $('#btnInicioSesion').click(() => {
+  $('#btnInicioSesiong').click(() => {
     const user = firebase.auth().currentUser
     if (user) {
       $('#btnInicioSesion').text('Iniciar Sesión')
@@ -39,9 +36,6 @@ $(() => {
         })
     }
 
-    $('#emailSesion').val('')
-    $('#passwordSesion').val('')
-    $('#modalSesion').modal('open')
   })
 
   $('#avatar').click(() => {
@@ -58,7 +52,7 @@ $(() => {
   })
 
   $('#btnTodoPost').click(() => {
-    $('#tituloPost').text('Posts de la Comunidad')
+    $('#tituloPost').text('Todos tus Posts')
     const post = new Post()
     post.consultarTodosPost()
   })
@@ -72,5 +66,11 @@ $(() => {
     } else {
       Materialize.toast(`Debes estar autenticado para ver tus posts`, 4000)
     }
+  })
+
+  $('#editar-post').click(()=>{
+    const post = new Post()
+    post.consultarPostxId($("#idPost").val())
+    $("#tituloPost").val("coneja")
   })
 })
